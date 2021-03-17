@@ -35,14 +35,16 @@
         <docker.image.prefix>moserp</docker.image.prefix>
         <java.version>1.8</java.version>
 
-        <spring-boot.version>2.4.3</spring-boot.version>
-        <spring-cloud-starter.version>Hoxton.SR10</spring-cloud-starter.version>
-        <jackson-datatype-money.version>1.2.1</jackson-datatype-money.version>
-        <moneta.version>1.4.2</moneta.version>
-        <zxing.version>3.4.1</zxing.version>
-        <rest-assured.version>2.9.0</rest-assured.version>
-        <lombok.version>1.18.18</lombok.version>
-        <mockito.version>3.8.0</mockito.version>
+        <spring-boot.version>1.3.2.RELEASE</spring-boot.version>
+        <spring-cloud-starter.version>Brixton.SR7</spring-cloud-starter.version>
+        <spring-boot-starter-data-rest.version>2.4.3</spring-boot-starter-data-rest.version>
+
+        <jackson-datatype-money.version>0.2.0</jackson-datatype-money.version>
+        <moneta.version>1.0</moneta.version>
+        <zxing.version>3.2.0</zxing.version>
+        <rest-assured.version>2.4.1</rest-assured.version>
+        <lombok.version>1.16.6</lombok.version>
+        <mockito.version>1.10.19</mockito.version>
         <dockerfile-maven.version>1.2.2</dockerfile-maven.version>
     </properties>
 
@@ -150,7 +152,8 @@
                 <plugin>
                     <groupId>com.spotify</groupId>
                     <artifactId>docker-maven-plugin</artifactId>
-                    <version>0.2.3</version>
+                    <!-- <version>0.2.3</version> -->
+                    <version>${dockerfile-maven.version}</version>
                     <configuration>
                         <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                         <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
