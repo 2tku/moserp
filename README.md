@@ -16,3 +16,40 @@ See the Wiki for more details.
 
 Status: NOT MAINTAINED AND OUT OF DATE!
 
+---
+My note:
+
+``` lua
+backend
+├── common
+|   ├── common-domain
+|   ├── common-base
+|   ├── common-structure
+|   ├── common-json-schema
+├── infrastructure
+|   ├── config-service
+|   ├── gateway-service
+|   ├── registry-service
+|   ├── authentication-service
+├── environment-module
+|   ├── environment-domain
+|   ├── environment
+├── facility-module
+|   ├── facility-domain
+|   ├── facility
+├── product-module
+|   ├── product-domain
+|   ├── product
+├── customer-module
+|   ├── customer-domain
+|   ├── customer
+├── inventory-module
+|   ├── inventory-domain
+|   ├── inventory
+├── sales-module
+|   ├── sales-domain
+|   ├── sales
+├── order-module
+|   ├── order-domain
+|   ├── order
+```
