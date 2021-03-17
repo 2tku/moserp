@@ -1,2 +1,14 @@
 /**/.idea
 /**/*.iml
+
+# for eclipse
+.classpath
+.project
+.settings/
+
+# for vscode
+.vscode/
+.factorypath
+
+# for java
+target/
